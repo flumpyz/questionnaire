@@ -170,3 +170,31 @@ input[type="radio"]:checked + label {
 
     margin-bottom: 16px;
 }
+
+.questionnaire-form__submit-button {
+    align-self: flex-end;
+
+    width: 218px;
+    height: 56px;
+
+    border: none;
+    border-radius: 25px;
+
+    outline: none;
+
+    background: #7D98F6;
+
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 32px;
+
+    color: #FFFFFF;
+
+    transition: 0.5s ease;
+}
+
+.questionnaire-form__submit-button:hover {
+    background: #5D71B8;
+}
