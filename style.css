@@ -21,3 +21,28 @@ html, body {
 
     background-color: blueviolet;
 }
+
+.questionnaire-row {
+    display: flex;
+
+    width: 100%;
+
+    margin-top: 112px;
+
+    background-color: aquamarine;
+}
+
+.card-image {
+    width: 400px;
+    height: 547px;
+}
+
+.questionnaire-form {
+}
+
+.questionnaire-form__input-form {
+    display: flex;
+    flex-direction: column;
+
+    width: 400px;
+}
