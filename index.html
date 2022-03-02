@@ -21,20 +21,23 @@
                     <label class="questionnaire-input-form__input-field-label"> Телефон
                         <input class="questionnaire-input-form__input-field" type="tel" placeholder="Номер телефона">
                     </label>
-                    <label class="questionnaire-input-form__input-field-label"> Пароль
+                    <label class="questionnaire-input-form__input-field-label questionnaire-input-form__input-field-label_password"> Пароль
                         <input class="questionnaire-input-form__input-field" type="password" placeholder="••••••">
                     </label>
 
+                    <div class="radio-button-container">
+                        <input class="radio-button-container_radio-button" id="like-work-radio" name="work-radio" type="radio">
+                        <label class="radio-button-container__radio-button-label" for="like-work-radio">
+                            Люблю свою работу
+                        </label>
+                    </div>
 
-                    <label>
-                        <input name="work-radio" type="radio">
-                        Люблю свою работу
-                    </label>
-                    <label>
-                        <input name="work-radio" type="radio">
-                        Не люблю свою работу
-                    </label>
-
+                    <div class="radio-button-container">
+                        <input class="radio-button-container__radio-button" id="not-like-work-radio" name="work-radio" type="radio">
+                        <label class="radio-button-container__radio-button-label" for="not-like-work-radio">
+                            Не люблю свою работу
+                        </label>
+                    </div>
 
                     <input type="submit">
                 </form>
@@ -42,5 +45,7 @@
         </div>
     </div>
 </div>
+
+<script src="script.js"></script>
 </body>
 </html>
