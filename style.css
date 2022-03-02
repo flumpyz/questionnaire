@@ -40,9 +40,50 @@ html, body {
 .questionnaire-form {
 }
 
-.questionnaire-form__input-form {
+.questionnaire-input-form {
     display: flex;
     flex-direction: column;
 
     width: 400px;
+}
+
+.questionnaire-input-form__input-field {
+    width: calc(400px - 16px);
+    height: 40px;
+
+    padding-left: 16px;
+
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+
+    background: #F8F8F8;
+
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #222222;
+}
+
+.questionnaire-input-form__input-field::placeholder {
+    color: #A9A9A9;
+
+    letter-spacing: 0.5px;
+}
+
+.questionnaire-input-form__input-field:active,
+.questionnaire-input-form__input-field:focus {
+    outline: none;
+}
+
+.questionnaire-input-form__input-field-label {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #222222;
 }
