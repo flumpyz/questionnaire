@@ -18,6 +18,13 @@ html, body {
     margin-right: 112px;
 }
 
+@media (max-width: 1120px) {
+    .container {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
 .questionnaire-row {
     display: flex;
 
@@ -26,10 +33,23 @@ html, body {
     margin-top: 112px;
 }
 
+@media (max-width: 1120px) {
+    .questionnaire-row {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 .card {
     position: relative;
 
     margin-right: 176px;
+}
+
+@media (max-width: 1120px) {
+    .card {
+        margin-left: 179px;
+    }
 }
 
 .card-image {
@@ -59,6 +79,12 @@ html, body {
 }
 
 .questionnaire-form {
+}
+
+@media (max-width: 1120px) {
+    .questionnaire-form {
+        margin-top: 40px;
+    }
 }
 
 .questionnaire-input-form {
@@ -220,6 +246,12 @@ input[type="radio"]:checked + label {
     color: #FFFFFF;
 
     transition: 0.5s ease;
+}
+
+@media (max-width: 1120px) {
+    .questionnaire-form__submit-button {
+        margin-bottom: 40px;
+    }
 }
 
 .questionnaire-form__submit-button:hover {
