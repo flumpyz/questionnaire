@@ -51,6 +51,8 @@ html, body {
 
     padding-left: 16px;
 
+    margin-top: 8px;
+
     border-radius: 15px;
     border: 1px solid rgba(0, 0, 0, 0.2);
 
@@ -77,6 +79,8 @@ html, body {
 }
 
 .questionnaire-input-form__input-field-label {
+    margin-bottom: 16px;
+
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -174,6 +178,8 @@ input[type="radio"]:checked + label {
 
     width: 218px;
     height: 56px;
+
+    margin-top: 24px;
 
     border: none;
     border-radius: 25px;
