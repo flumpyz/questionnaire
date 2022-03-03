@@ -7,8 +7,6 @@ html, body {
 
     width: 100%;
     height: 100%;
-
-    background-color: aqua;
 }
 
 .container {
@@ -18,8 +16,6 @@ html, body {
 
     margin-left: 112px;
     margin-right: 112px;
-
-    background-color: blueviolet;
 }
 
 .questionnaire-row {
@@ -28,8 +24,10 @@ html, body {
     width: 100%;
 
     margin-top: 112px;
+}
 
-    background-color: aquamarine;
+.card {
+    margin-right: 176px;
 }
 
 .card-image {
