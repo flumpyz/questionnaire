@@ -27,12 +27,35 @@ html, body {
 }
 
 .card {
+    position: relative;
+
     margin-right: 176px;
 }
 
 .card-image {
     width: 400px;
     height: 547px;
+}
+
+.card-title {
+    position: absolute;
+
+    top: 230px;
+    left: 144px;
+
+    z-index: 3;
+
+    width: 398px;
+
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 88px;
+    line-height: 96px;
+
+    color: #7D98F7;
+
+    transform: rotate(-45deg);
 }
 
 .questionnaire-form {
