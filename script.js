@@ -16,7 +16,7 @@ const submitFormData = (event) => {
         || passwordInput.value.trim() === ''
         || checkedRadio === null) {
         alert("Please input data");
-
+        
         checkInputs(inputsArr);
     } else {
         checkInputs(inputsArr);

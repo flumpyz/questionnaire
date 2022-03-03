@@ -215,51 +215,57 @@ input[type="radio"] {
     -webkit-appearance: none;
     appearance: none;
 
-    background-color: #F8F8F8;
+    width: 32px;
+    height: 32px;
 
     margin: 0 16px 0 0;
 
-    font: inherit;
-    color: currentColor;
-    width: 32px;
-    height: 32px;
     border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 15px;
 
-    transform: translateY(-0.075em);
+    background-color: #F8F8F8;
 
-    /*display: flex;*/
+    font: inherit;
+
+    color: currentColor;
+
+    transform: translateY(-0.075em);
 
     cursor: pointer;
 }
 
 input[type="radio"]:checked {
-    background-color: #7D98F6;
-
     border: none;
+
+    background-color: #7D98F6;
 }
 
 input[type="radio"]::before {
     content: "";
+
+    position: absolute;
+
+    display: block;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
     width: 12px;
     height: 12px;
-    transform: scale(0);
+
+    margin: auto;
 
     border-radius: 15px;
-
-    transition: 120ms transform ease-in-out;
 
     background-color: #FFFFFF;
 
     text-align: center;
 
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
+    transform: scale(0);
+
+    transition: 120ms transform ease-in-out;
 }
 
 input[type="radio"]:checked::before {
