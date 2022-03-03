@@ -2,6 +2,10 @@ html, body {
     height: 100%;
 }
 
+form {
+    margin: 0;
+}
+
 .questionnaire {
     display: flex;
 
@@ -40,6 +44,12 @@ html, body {
     }
 }
 
+@media (max-width: 780px) {
+    .questionnaire-row {
+        margin-top: 40px;
+    }
+}
+
 .card {
     position: relative;
 
@@ -52,9 +62,22 @@ html, body {
     }
 }
 
+@media (max-width: 780px) {
+    .card {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 .card-image {
     width: 400px;
     height: 547px;
+}
+
+@media (max-width: 780px) {
+    .card-image {
+
+    }
 }
 
 .card-title {
@@ -78,6 +101,12 @@ html, body {
     transform: rotate(-45deg);
 }
 
+@media (max-width: 780px) {
+    .card-title {
+        left: 0;
+    }
+}
+
 .questionnaire-form {
 }
 
@@ -87,11 +116,22 @@ html, body {
     }
 }
 
+@media (max-width: 780px) {
+    .questionnaire-form {
+    }
+}
+
 .questionnaire-input-form {
     display: flex;
     flex-direction: column;
 
-    width: 400px;
+    max-width: 400px;
+}
+
+@media (max-width: 780px) {
+    .questionnaire-input-form {
+        align-items: flex-start;
+    }
 }
 
 .questionnaire-input-form__input-field {
