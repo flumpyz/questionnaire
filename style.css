@@ -44,7 +44,7 @@ form {
     }
 }
 
-@media (max-width: 780px) {
+@media (max-width: 768px) {
     .questionnaire-row {
         margin-top: 40px;
     }
@@ -62,7 +62,7 @@ form {
     }
 }
 
-@media (max-width: 780px) {
+@media (max-width: 768px) {
     .card {
         margin-left: auto;
         margin-right: auto;
@@ -74,9 +74,10 @@ form {
     height: 547px;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 425px) {
     .card-image {
-
+        width: 350px;
+        height: 480px;
     }
 }
 
@@ -101,9 +102,17 @@ form {
     transform: rotate(-45deg);
 }
 
-@media (max-width: 780px) {
+@media (max-width: 768px) {
     .card-title {
         left: 0;
+    }
+}
+
+@media (max-width: 425px) {
+    .card-title {
+        width: 330px;
+
+        font-size: 72px;
     }
 }
 
@@ -116,7 +125,7 @@ form {
     }
 }
 
-@media (max-width: 780px) {
+@media (max-width: 768px) {
     .questionnaire-form {
     }
 }
@@ -128,7 +137,7 @@ form {
     max-width: 400px;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 768px) {
     .questionnaire-input-form {
         align-items: flex-start;
     }
@@ -154,6 +163,12 @@ form {
     line-height: 24px;
 
     color: #222222;
+}
+
+@media (max-width: 425px) {
+    .questionnaire-input-form__input-field {
+        width: calc(350px - 16px);
+    }
 }
 
 .questionnaire-input-form__input-field::placeholder {
