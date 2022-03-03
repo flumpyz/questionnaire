@@ -19,16 +19,16 @@
             </div>
 
             <div class="questionnaire-form">
-                <form class="questionnaire-input-form">
+                <form class="questionnaire-input-form" id="questionnaire-form" onsubmit="submitFormData(event)">
                     <label class="questionnaire-input-form__input-field-label"> Ваше имя
-                        <input class="questionnaire-input-form__input-field" type="text" placeholder="Имя">
+                        <input class="questionnaire-input-form__input-field" id="name-input" type="text" placeholder="Имя">
                     </label>
                     <label class="questionnaire-input-form__input-field-label"> Телефон
-                        <input class="questionnaire-input-form__input-field" type="tel" placeholder="Номер телефона">
+                        <input class="questionnaire-input-form__input-field" id="phone-input" type="tel" placeholder="Номер телефона">
                     </label>
                     <label class="questionnaire-input-form__input-field-label questionnaire-input-form__input-field-label_password">
                         Пароль
-                        <input class="questionnaire-input-form__input-field" type="password" placeholder="••••••">
+                        <input class="questionnaire-input-form__input-field" id="password-input" type="password" placeholder="••••••">
                     </label>
 
                     <div class="radio-button-container">
