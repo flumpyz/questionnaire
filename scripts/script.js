@@ -56,7 +56,7 @@ const clearForm = (form) => {
 };
 
 const checkKeyCode = (event) => {
-    if (event.keyCode == 13) {
+    if (event.keyCode === 13) {
         return false;
     }
 };

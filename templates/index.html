@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/style.css">
     <title>Questionnaire</title>
 </head>
 <body>
-<div class="questionnaire">
+<main class="questionnaire">
     <div class="container">
         <div class="questionnaire-row">
-            <div class="card">
-                <img class="card-image" src="photo.png" alt="">
+            <section class="card">
+                <img class="card-image" src="../images/photo.png" alt="">
                 <h1 class="card-title">
                     Hello <br>
                     my friend
                 </h1>
-            </div>
+            </section>
 
-            <div class="questionnaire-form">
+            <article class="questionnaire-form">
                 <form class="questionnaire-input-form" id="questionnaire-form" onsubmit="submitFormData(event)">
                     <label class="questionnaire-input-form__input-field-label"> Ваше имя
                         <input class="questionnaire-input-form__input-field" id="name-input" type="text" placeholder="Имя" onkeydown="checkKeyCode()">
@@ -50,11 +50,11 @@
 
                     <input class="questionnaire-form__submit-button" type="button" value="Отправить анкету" onclick="submitFormData(event)">
                 </form>
-            </div>
+            </article>
         </div>
     </div>
-</div>
+</main>
 
-<script src="script.js"></script>
+<script src="../scripts/script.js"></script>
 </body>
 </html>
