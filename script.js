@@ -16,7 +16,7 @@ const submitFormData = (event) => {
         || passwordInput.value.trim() === ''
         || checkedRadio === null) {
         alert("Please input data");
-        
+
         checkInputs(inputsArr);
     } else {
         checkInputs(inputsArr);
@@ -53,4 +53,10 @@ const checkInputField = (inputField) => {
 
 const clearForm = (form) => {
     form.reset();
+};
+
+const checkKeyCode = (event) => {
+    if (event.keyCode == 13) {
+        return false;
+    }
 };

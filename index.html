@@ -22,14 +22,14 @@
             <div class="questionnaire-form">
                 <form class="questionnaire-input-form" id="questionnaire-form" onsubmit="submitFormData(event)">
                     <label class="questionnaire-input-form__input-field-label"> Ваше имя
-                        <input class="questionnaire-input-form__input-field" id="name-input" type="text" placeholder="Имя">
+                        <input class="questionnaire-input-form__input-field" id="name-input" type="text" placeholder="Имя" onkeydown="checkKeyCode()">
                     </label>
                     <label class="questionnaire-input-form__input-field-label"> Телефон
-                        <input class="questionnaire-input-form__input-field" id="phone-input" type="tel" placeholder="Номер телефона">
+                        <input class="questionnaire-input-form__input-field" id="phone-input" type="tel" placeholder="Номер телефона" onkeydown="checkKeyCode()">
                     </label>
                     <label class="questionnaire-input-form__input-field-label questionnaire-input-form__input-field-label_password">
                         Пароль
-                        <input class="questionnaire-input-form__input-field" id="password-input" type="password" placeholder="••••••">
+                        <input class="questionnaire-input-form__input-field" id="password-input" type="password" placeholder="••••••" onkeydown="checkKeyCode()">
                     </label>
 
                     <div class="radio-button-container">
@@ -48,7 +48,7 @@
                         </label>
                     </div>
 
-                    <input class="questionnaire-form__submit-button" type="submit" value="Отправить анкету">
+                    <input class="questionnaire-form__submit-button" type="button" value="Отправить анкету" onclick="submitFormData(event)">
                 </form>
             </div>
         </div>
